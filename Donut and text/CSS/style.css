@@ -1,0 +1,43 @@
+/*SECTION*/
+
+img {
+    width: 20%;
+}
+
+section {
+    margin: 20px;
+    border: 3px solid #F189AE;
+    padding: 20px;
+}
+
+.img-hidden {
+    display: none;
+}
+
+p {
+    margin-top: 20px;
+}
+
+/*JS*/
+
+.img-kair {
+    float: left;
+}
+
+.img-des {
+    float: right;
+}
+
+.img-pasl {
+    display: none;
+}
+
+.img-nukel {
+    display: none;
+}
+
+.img-see {
+    display: block;
+}
+
+.img-ats {}
