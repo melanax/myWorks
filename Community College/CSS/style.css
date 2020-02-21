@@ -1,0 +1,113 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+nav {
+    float: left;
+    width: 20%;
+}
+
+footer {
+    clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+    padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+}
+
+/* MY CSS */
+
+body {
+    font-family: 'Fondamento', cursive;
+    letter-spacing: 2px;
+
+}
+
+section,
+aside {
+    font-size: 10px;
+    line-height: 20px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.paragraph {
+    text-indent: 20px;
+}
+
+a,
+a:visited,
+a:focus,
+a:hover {
+    color: #a66;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:active {
+    font-size: 15px;
+}
+
+.ext {
+    background-image: url('../IMG/left.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 0 20px 0 0;
+}
+
+.nav li a {
+    text-decoration: none;
+}
+
+.nav li {
+    list-style: none;
+    text-align: center;
+    border: 1px solid #a66;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
