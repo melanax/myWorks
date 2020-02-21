@@ -1,0 +1,271 @@
+/*******RESET*******/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Girassol', cursive;
+}
+
+/*******HEADER*******/
+
+.head-back {
+    background-image: url("../IMG/bg_head.jpg");
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.img-radius {
+    border-radius: 100%;
+    border: 7px solid #fff;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    letter-spacing: 5px;
+}
+
+/*******NAV*******/
+
+nav li a {
+    color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+nav {
+    text-align: center;
+    border-bottom: 1px solid #CFCFCF;
+}
+
+nav li a:hover {
+    color: #D93126;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+/*******MAIN*******/
+
+.text1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.title {
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.title::before,
+.title::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2px;
+    background: #cfcfcf;
+    border: solid #FFF;
+    border-width: 0 20px;
+}
+
+.title::before {
+    margin-left: -100%;
+}
+
+.title::after {
+    margin-right: -100%;
+}
+
+.card {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border: none;
+}
+
+.card h5,
+.card a {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card p::first-letter {
+    margin-left: 25px;
+}
+
+.card a {
+    color: #000;
+    border: 1px solid #cfcfcf;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.work {
+    list-style: none;
+    text-align: center;
+}
+
+.work p {
+    color: #D93126;
+}
+
+.work img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.clients {
+    padding-bottom: 30px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/******FOOTER******/
+
+footer li a {
+    color: #fff;
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.foot-back {
+    background-color: #232323;
+    color: #fff;
+    list-style: none;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.cop-back {
+    background: #000000;
+    padding-bottom: 10px;
+    padding-top: 25px;
+    margin-top: -25px;
+}
+
+footer li {
+    width: 400px;
+}
+
+/******GRID******/
+
+/*****LG******/
+@media screen and (min-width: 900px) {
+    .foot-back {
+        display: grid;
+        grid-template-columns: 440px 300px 450px 300px;
+        grid-template-rows: 300px;
+    }
+
+    .li1 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    .li2 {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    .li3 {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+    }
+
+    .li4 {
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;
+    }
+}
+
+/*****MD******/
+
+@media screen and (max-width: 899px) {
+    .foot-back {
+        display: grid;
+        grid-template-columns: 500px 300px;
+        grid-template-rows: 200px 300px;
+    }
+
+    .li1 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+
+    }
+
+    .li2 {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    .li3 {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    .li4 {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+}
+
+/*****SM*****/
+
+@media (max-width: 557px) {
+    .foot-back {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 150px 120px 250px 200px;
+    }
+
+    .li1 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+
+    }
+
+    .li2 {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    .li3 {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+
+    .li4 {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+    }
+}
+
+/*****XS******/
+
+@media (max-width: 500px) {
+    nav li {
+        display: list-item;
+    }
+
+    .title::before {
+        margin-left: 0%;
+    }
+
+    .title::after {
+        margin-right: 0%;
+    }
+}
